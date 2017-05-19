@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ie.wit.ohmydog.activities.LoginActivity">
+
+    <EditText
+        android:id="@+id/loginEmailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/loginPassField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/loginEmailField"
+        android:layout_alignStart="@+id/loginEmailField"
+        android:layout_alignEnd="@+id/loginEmailField" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/loginPassField"
+        android:layout_below="@+id/loginPassField"
+        android:layout_marginTop="20dp"
+        android:background="@color/bannerBGColor"
+        android:text="@string/LoginBtn"
+        tools:text="Log in" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleBtn"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <Button
+        android:id="@+id/getAccountId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/loginPassField"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/loginBtn"
+        android:layout_marginBottom="20dp"
+        android:background="@color/bannerBGColor"
+        android:text="@string/get_an_account" />
+</RelativeLayout>

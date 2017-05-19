@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ie.wit.ohmydog.activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+    <TextView
+        android:id="@+id/recentAddedBarTextView"
+        style="@style/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recentlyViewedLbl"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/basicFrame"
+        android:layout_above="@+id/footerLinearLayout"
+        android:layout_below="@+id/recentAddedBarTextView"
+        >
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footerLinearLayout"
+        style="@style/footer"
+        android:background="@color/bannerBGColor"
+        android:layout_width="fill_parent"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dip"
+            android:text="@string/appWebsite"
+            android:textColor="@color/bgColor" />
+    </LinearLayout>
+
+</RelativeLayout>

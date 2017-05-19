@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "845331440471",
+    "firebase_url": "https://ohmydog-49858.firebaseio.com",
+    "project_id": "ohmydog-49858",
+    "storage_bucket": "ohmydog-49858.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845331440471:android:d74689a458377a22",
+        "android_client_info": {
+          "package_name": "ie.wit.ohmydog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845331440471-crr3kmrv10gdvle9ij5pldotqce81rjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.wit.ohmydog",
+            "certificate_hash": "785d0e0eddf3d6891f2616c88944aa74469e9cbe"
+          }
+        },
+        {
+          "client_id": "845331440471-rj8mj97j22nf4aqi3td82nsul6ermlk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz_hBCOYIZX7qwBIhSvl-EzQJ5hyFJmSc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845331440471-rj8mj97j22nf4aqi3td82nsul6ermlk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

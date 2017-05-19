@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group  android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/homesign"
+            android:title="Home" />
+
+        <item android:id="@+id/add_newDog"
+            android:icon="@drawable/plusincircle"
+            android:title="Add a Dog"/>
+
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="All Dogs - Map" />
+
+    </group>
+
+
+    <item android:title="Extras">
+        <menu>
+            <item
+                android:id="@+id/log_out2"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>

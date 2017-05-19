@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_dog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="ie.wit.ohmydog.fragments.AddDog">
+
+
+    <ScrollView
+        android:id="@+id/scro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGroupLF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioLostId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioLost" />
+
+            <RadioButton
+                android:id="@+id/radioFoundId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioFound" />
+        </RadioGroup>
+
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupLF"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/add_btn" />
+
+        <Spinner
+            android:id="@+id/dogs_spinner"
+            style="@style/spinner_style"/>
+
+
+        <EditText
+            android:id="@+id/dogDescField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dogBreedField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="@string/dog_description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="10dp" />
+
+
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:elevation="1dp"
+            android:text="@string/submit_post"
+            android:textColor="@android:color/white" />
+
+
+
+        <fragment
+            android:name="ie.wit.ohmydog.fragments.MyMapFragment"
+            android:id="@+id/addDogMap"
+            android:layout_alignBottom="@+id/scro"
+            android:layout_marginTop="10dp"
+            android:layout_width="355dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
